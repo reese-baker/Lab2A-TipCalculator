@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 TextInputEditText editText = binding.tipPercentageInput;
-                String tipPercentageInput = Objects.requireNonNull(editText.getText()).toString();
+                String tipPercentageInput = editText.getText().toString();
 
                 if (tipPercentageInput.isEmpty() || tipPercentageInput.equals("0")) {
                     binding.output.setText(getResources().getString(R.string.invalidInput));
